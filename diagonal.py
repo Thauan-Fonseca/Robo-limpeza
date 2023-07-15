@@ -19,7 +19,8 @@ def diagonal_1():
         turn_left()
         mover()
         virar_direita()
-
+    virar()
+    mover2()
 
 def diagonal_2():
     for cont in range(5):
@@ -30,6 +31,8 @@ def diagonal_2():
 
     turn_left()
     mover()
+    virar()
+    mover2()
 
 def diagonal_3():
     for cont in range(2):
@@ -41,7 +44,8 @@ def diagonal_3():
         virar_direita()
         mover()
         turn_left()
-
+    turn_left()
+    mover2()
 
 def diagonal_4():
     mover()
@@ -51,7 +55,9 @@ def diagonal_4():
     mover()
     turn_left()
     mover()
-
+    virar()
+    mover2()
+    virar_direita()
 
 def diagonal_5():
     for cont in range(7):
@@ -59,7 +65,70 @@ def diagonal_5():
         virar_direita()
         mover()
         turn_left()
+    virar()
+    mover2()
+    virar_direita()
 
+def diagonal_6():
+    for cont in range(5):
+        mover()
+        turn_left()
+        mover()
+        virar_direita()
+
+
+def diagonal_7():
+    for cont in range(3):
+        mover()
+        virar_direita()
+        mover()
+        turn_left()
+    mover()
+    virar()
+    mover2()
+    turn_left()
+
+def diagonal_8():
+    for cont in range(2):
+        mover()
+        turn_left()
+        mover()
+        virar_direita()
+    mover()
+
+
+def diagonal_9():
+    turn_left()
+    mover()
+
+    for cont in range(4):
+        turn_left()
+        mover()
+        virar_direita()
+        mover()
+    virar_direita()
+
+
+def diagonal_10():
+    mover2()
+    virar_direita()
+
+    for cont in range(2):
+        mover()
+        turn_left()
+        mover()
+        virar_direita()
+    mover()
+
+
+def diagonal_final():
+    virar_direita()
+    for cont in range(4):
+        mover()
+        turn_left()
+        mover()
+        virar_direita()
+    mover()
 
 def iniciar_rota():
     virar()
@@ -77,26 +146,30 @@ def mover2():
 
 
 def main():
+
+
+    put_beeper()
     diagonal_1()
-    virar()
-    mover2()
+
     diagonal_2()
 
-    virar()
-    mover2()
-
     diagonal_3()
-    turn_left()
-    mover2()
 
     diagonal_4()
 
-    virar()
-    mover2()
-
-    virar_direita()
-
     diagonal_5()
+
+    diagonal_6()
+
+    diagonal_7()
+
+    diagonal_8()
+
+    diagonal_9()
+
+    diagonal_10()
+
+    diagonal_final()
 
 
 if __name__ == "__main__":
