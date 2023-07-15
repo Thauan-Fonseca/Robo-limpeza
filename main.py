@@ -57,6 +57,8 @@ def zig_zag_vertical():
 
 def main():
     """Karel code goes here!"""
+
+    #Varredura Uniforme
     ir_diagonal()
     zig_zag_vertical()
     zig_zag_vertical()
@@ -67,6 +69,8 @@ def main():
     turn_left()
     percorre_fronteira()
     turn_left()
+    
+
     
 
 if __name__ == "__main__":
