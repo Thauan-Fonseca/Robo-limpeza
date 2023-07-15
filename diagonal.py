@@ -53,6 +53,14 @@ def diagonal_4():
     mover()
 
 
+def diagonal_5():
+    for cont in range(7):
+        mover()
+        virar_direita()
+        mover()
+        turn_left()
+
+
 def iniciar_rota():
     virar()
     mover2()
@@ -86,6 +94,9 @@ def main():
     virar()
     mover2()
 
+    virar_direita()
+
+    diagonal_5()
 
 
 if __name__ == "__main__":
