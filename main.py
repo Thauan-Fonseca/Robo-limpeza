@@ -2,20 +2,9 @@ from stanfordkarel import *
 
 
 def percorre_fronteira():
-    move()
-    put_beeper()
-    move()
-    put_beeper()
-    move()
-    put_beeper()
-    move()
-    put_beeper()
-    move()
-    put_beeper()
-    move()
-    put_beeper()
-    move()
-    put_beeper()
+    for cont in range(7):
+        move()
+        put_beeper()
 
 def ir_diagonal():
     percorre_fronteira()
@@ -24,23 +13,14 @@ def ir_diagonal():
     
 
 def virar_direita():
-    turn_left()
-    turn_left()
-    turn_left()
+    for cont in range(3):
+        turn_left()
+
 
 def anda_seis():
-    move()
-    put_beeper()
-    move()
-    put_beeper()
-    move()
-    put_beeper()
-    move()
-    put_beeper()
-    move()
-    put_beeper()
-    move()
-    put_beeper()
+    for cont in range(6):
+        move()
+        put_beeper()
 
 def zig_zag_vertical():
     turn_left()
@@ -69,8 +49,6 @@ def main():
     turn_left()
     percorre_fronteira()
     turn_left()
-    
-
     
 
 if __name__ == "__main__":
