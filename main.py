@@ -52,5 +52,5 @@ def main():
     
 
 if __name__ == "__main__":
-    run_karel_program()
+    run_karel_program('.\maze_8x8_type_I.w')
 
